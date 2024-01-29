@@ -1,6 +1,9 @@
 from random import choice
 from time import sleep
 wins = draws = defeats = 0
+username= str(input('Digite seu nome de usuário: ')).strip().title()
+print('=-='*15)
+print(f'Seja muito bem-vindo(a), \033[34m{username}\033[m! Será que você consegue me vencer no jokenpô? (ps:Já aviso que sou \033[32mmuito bom\033[m...)')
 while True:
     options= 'pedra', 'papel', 'tesoura'
     pc= choice(options)
@@ -46,7 +49,7 @@ while True:
             print('\33[33mEu também escolhi tesoura, DEU EMPATE! Teve sorte dessa vez\33[m.')
             draws+=1
     print('=-='*15)
-print('\033[04;34mPrograma encerrado com sucesso.\033[m')
+print(f'Programa encerrado com sucesso, \033[34m{username}.\033[m')
 print('Seu recorde foi de: ')
 print(f'\033[04;32m{wins} Vitórias\33[m', end= ' - ')
 print(f'\033[04;33m{draws} Empates\033[m', end=' - ')
