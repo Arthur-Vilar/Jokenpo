@@ -7,7 +7,7 @@ print(f'Seja muito bem-vindo(a), \033[34m{username}\033[m! Será que você conse
 while True:
     options= 'pedra', 'papel', 'tesoura'
     pc= choice(options)
-    user= int(input('Pedra, Papel ou Tesoura?\n[1] = Pedra\n[2] = Papel\n[3] = Tesoura\n[4] = Sair\nSua opção: '))
+    user= int(input('Pedra, Papel ou Tesoura?\n[1] = \033[34mPedra\033[m\n[2] = \033[35mPapel\033[m\n[3] = \033[36mTesoura\033[m\n[4] = \033[31mSair\033[m\nSua opção: '))
     if user==4:
         print('\033[04;31mEncerrando programa...\033[m')
         sleep(2)
